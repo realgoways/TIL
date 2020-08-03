@@ -4,7 +4,7 @@
 set -e
 
 # build
-npm run docs:build
+npm run build
 
 # navigate into the build output directory
 cd docs/.vuepress/dist
@@ -14,7 +14,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'Add sidebars'
+git commit -m 'deploy with vuepress'
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
