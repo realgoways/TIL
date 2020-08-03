@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 home: true
 heroImage: /logo.jpeg
@@ -15,15 +14,3 @@ features:
   details: 다 커서 뒤늦게 레고에 입문했으며 아주 작은 부분까지 깨알같고 세심하게 신경 쓴 레고의 디테일을 좋아합니다.
 footer: Copyright © 2020-present realgo
 ---
-=======
-# Today I Learned
-
-https://realgoways.github.io/TIL/
-
->>>>>>> f32c09da95253f7a4d117ff4598d88cb389d8235
-
-> 쉬지 말고 기록하라.  
-> 기억은 흐려지고 생각은 사라진다.  
-> 머리를 믿지 말고 손을 믿어라.  
-
-> 다산 정약용
