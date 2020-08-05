@@ -27,7 +27,7 @@ VuePress를 알게 된 후 git pages 를 만든다고 이래 저래 셋팅을 �
 
 ![image](https://user-images.githubusercontent.com/15275415/89363494-4fb38a80-d70b-11ea-87d9-c00769d65401.jpg)
 
-개선하고 나면 더 편할텐데 바빠서 개선할 시간이 없다고 하는 유명한 짤.
+개선하고 나면 더 편할텐데 바빠서 개선할 시간이 없다고 하는 유명한 짤.  
 찾다보니 레고 버전도 있다ㅋㅋ
 
 ![image](https://user-images.githubusercontent.com/15275415/89363497-517d4e00-d70b-11ea-8199-2430fb62d91a.jpg)
@@ -37,7 +37,9 @@ VuePress를 알게 된 후 git pages 를 만든다고 이래 저래 셋팅을 �
 [https://github.com/marketplace/actions/vuepress-deploy](https://github.com/marketplace/actions/vuepress-deploy) 참고
 
 ### 저장소 root 에 `.github/workflows` 폴더 설치
+::: warning 폴더명
 `workflow` 가 아니라 `workflows` 임을 주의.  
+:::
 처음에 `s` 를 빼먹고 설치해서 액션이 제대로 실행되지 않았었다. 😅
 
 ### 위에서 설치한 폴더 하위에 yml 파일 생성
