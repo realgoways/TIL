@@ -17,13 +17,16 @@ module.exports = {
       {
         title: 'Today I Learned',
         path: '/about/',
-        collapsable: false,
-      },
-      {
+      }, {
+        title: 'Concept',
+        children: CONST.ConceptList,
+      }, {
         title: 'Git',
         children: CONST.GitList,
-        collapsable: false,
-      }
+      }, {
+        title: 'VuePress',
+        children: CONST.VuePressList,
+      },
     ],
   },
   plugins: ['@vuepress/back-to-top']
