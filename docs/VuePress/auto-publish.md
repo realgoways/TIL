@@ -10,6 +10,8 @@ meta:
     content: VuePress 로 생성한 사이트를 손쉽게 배포해보자
   - property: og:url
     content: https://realgoways.github.io/TIL/VuePress/auto-deploy.html
+  - property: twitter:url
+    content: https://realgoways.github.io/TIL/VuePress/auto-deploy.html
 ---
 
 # VuePress 손쉽게 배포하기 (자동 빌드 및 배포)

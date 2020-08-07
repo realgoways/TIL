@@ -10,6 +10,8 @@ meta:
     content: Git 계정을 분리해서 여러 개로 사용하기
   - property: og:url
     content: https://realgoways.github.io/TIL/Git/user-separate.html
+  - property: twitter:url
+    content: https://realgoways.github.io/TIL/Git/user-separate.html
 ---
 
 # Git 계정 분리해서 사용하기

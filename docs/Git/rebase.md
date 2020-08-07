@@ -1,3 +1,13 @@
+---
+meta:
+  - name: keywords
+    content: git,rebase
+  - property: og:url
+    content: https://realgoways.github.io/TIL/Git/rebase.html
+  - property: twitter:url
+    content: https://realgoways.github.io/TIL/Git/rebase.html
+---
+
 # Git rebase
 
 reabase 에 대해 알아보자.

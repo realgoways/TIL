@@ -1,3 +1,13 @@
+---
+meta:
+  - name: keywords
+    content: reactive programming
+  - property: og:url
+    content: https://realgoways.github.io/TIL/Concept/reactive-programming.html
+  - property: twitter:url
+    content: https://realgoways.github.io/TIL/Concept/reactive-programming.html
+---
+
 # Reactive Programming
 
 회사 동료와 이런 저런 얘기 하다  
