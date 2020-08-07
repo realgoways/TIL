@@ -12,7 +12,7 @@ meta:
     content: https://realgoways.github.io/TIL/VuePress/auto-deploy.html
 ---
 
-# VuePress 손쉽게 배포하기 (자동 배포)
+# VuePress 손쉽게 배포하기 (자동 빌드 및 배포)
 VuePress를 알게 된 후 git pages 를 만든다고 이래 저래 셋팅을 하다 보니  
 새로 페이지를 만들거나 수정한 후 최종 반영까지의 단계가 조금 번거롭다고 느낌.
 

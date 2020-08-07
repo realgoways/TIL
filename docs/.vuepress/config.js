@@ -54,6 +54,17 @@ module.exports = {
       image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
       publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
       modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+      customMeta: (add, context) => {
+
+        const {
+            $site, // Site configs provided by Vuepress
+            $page, // Page configs provided by Vuepress
+
+            // All the computed options from above:
+            siteTitle, title, description, author, tags,
+            twitterCard, type, url, image,
+        } = context
+    },
     }],
   ]
 }
