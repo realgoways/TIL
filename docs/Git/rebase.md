@@ -2,6 +2,12 @@
 meta:
   - name: keywords
     content: git,rebase
+  - name: description
+    content: Git rebase 개념
+  - property: og:title
+    content: Git rebase 개념
+  - property: og:description
+    content: Git rebase 에 대해서 알아보자.
   - property: og:url
     content: https://realgoways.github.io/TIL/Git/rebase.html
   - property: twitter:url

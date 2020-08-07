@@ -2,6 +2,12 @@
 meta:
   - name: keywords
     content: reactive programming
+  - name: description
+    content: Reactive Programming 이란?
+  - property: og:title
+    content: Reactive Programming 이란?
+  - property: og:description
+    content: Reactive Programming 이 뭔지 간단하게 훑어보자.
   - property: og:url
     content: https://realgoways.github.io/TIL/Concept/reactive-programming.html
   - property: twitter:url
