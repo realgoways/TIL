@@ -50,7 +50,7 @@ module.exports = {
     ['seo', {
       siteTitle: (_, $site) => $site.title,
       title: $page => $page.title,
-      description: $page => $page.frontmatter.description,
+      // description: $page => $page.frontmatter.description,
       author: (_, $site) => $site.themeConfig.author,
       tags: $page => $page.frontmatter.tags,
       url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
@@ -58,7 +58,6 @@ module.exports = {
       // publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
       // modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
       customMeta: (add, context) => {
-
         const {
             $site, // Site configs provided by Vuepress
             $page, // Page configs provided by Vuepress
