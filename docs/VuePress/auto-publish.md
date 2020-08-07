@@ -12,7 +12,7 @@ meta:
     content: https://realgoways.github.io/TIL/VuePress/auto-deploy.html
 ---
 
-# VuePress 손쉽게 배포하기
+# VuePress 손쉽게 배포하기 (자동 배포)
 VuePress를 알게 된 후 git pages 를 만든다고 이래 저래 셋팅을 하다 보니  
 새로 페이지를 만들거나 수정한 후 최종 반영까지의 단계가 조금 번거롭다고 느낌.
 
@@ -45,7 +45,7 @@ VuePress를 알게 된 후 git pages 를 만든다고 이래 저래 셋팅을 �
 ### 위에서 설치한 폴더 하위에 yml 파일 생성
 필자는 `main.yml` 로 생성하고 내용은 아래 걸로 추가해줬다.
 
-```sh
+```sh{2,5,7-8}
 name: Build and Deploy
 on: [push]
 jobs:
