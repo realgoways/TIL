@@ -10,3 +10,7 @@ exports.ConceptList = [
 exports.VuePressList = [
   'VuePress/auto-publish.md',
 ]
+
+exports.HadoopList = [
+  'Hadoop/hadoop.md',
+]

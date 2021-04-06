@@ -25,6 +25,9 @@ module.exports = {
         title: 'Git',
         children: CONST.GitList,
       }, {
+        title: 'Hadoop',
+        children: CONST.HadoopList,
+      }, {
         title: 'VuePress',
         children: CONST.VuePressList,
       },
