@@ -14,3 +14,8 @@ exports.VuePressList = [
 exports.HadoopList = [
   'Hadoop/hadoop.md',
 ]
+
+exports.JPAList = [
+  'JPA/about_jpa.md',
+  'JPA/about_hibernate.md',
+]

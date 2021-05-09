@@ -28,6 +28,9 @@ module.exports = {
         title: 'Hadoop',
         children: CONST.HadoopList,
       }, {
+        title: 'JPA',
+        children: CONST.JPAList,
+      }, {
         title: 'VuePress',
         children: CONST.VuePressList,
       },

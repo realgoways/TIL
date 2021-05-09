@@ -2,9 +2,9 @@
 home: true
 heroImage: /logo.jpeg
 heroText: 개발하는 realgo 입니다.
-tagline: 개발 외 이런 것들을 좋아합니다.
 actionText: Let's go inside →
 actionLink: /about/
+tagline: 개발 외 이런 것들을 좋아합니다.
 features:
   - title: MOVIE 🎥
     details: 2시간 안팎의 시간으로 전혀 다른 세계를 경험할 수 있고 그 속에서 다양한 생각을 할 수 있게 해주는 영화를 좋아합니다.
