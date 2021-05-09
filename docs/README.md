@@ -3,7 +3,7 @@ home: true
 heroImage: /logo.jpeg
 heroText: 개발하는 realgo 입니다.
 tagline: 개발 외 이런 것들을 좋아합니다.
-actionText: 그냥 바로 진입 →
+actionText: Let's go inside →
 actionLink: /about/
 features:
   - title: MOVIE 🎥
