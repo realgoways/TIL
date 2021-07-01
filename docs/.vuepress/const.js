@@ -13,6 +13,7 @@ exports.VuePressList = [
 
 exports.HadoopList = [
   'Hadoop/hadoop.md',
+  'Hadoop/sql-on-hadoop.md',
 ]
 
 exports.JPAList = [
