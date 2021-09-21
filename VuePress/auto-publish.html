@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress 손쉽게 배포하기 (자동 빌드 및 배포) | realgo&#39;s TIL</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/TIL/logo.jpeg">
+    <meta name="description" content="vuepress 쉽게 배포하기">
+    <meta name="keywords" content="vuepress,자동,배포,자동배포">
+    <meta property="og:title" content="VuePress 손쉽게 배포하기">
+    <meta property="og:description" content="VuePress 로 생성한 사이트를 손쉽게 배포해보자">
+    <meta property="og:url" content="https://realgoways.github.io/TIL/VuePress/auto-deploy.html">
+    <meta property="twitter:url" content="https://realgoways.github.io/TIL/VuePress/auto-deploy.html">
+    <meta property="og:site_name" content="realgo's TIL">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="VuePress 손쉽게 배포하기 (자동 빌드 및 배포)">
+    <meta name="twitter:url" content="/VuePress/auto-publish.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <link rel="preload" href="/TIL/assets/css/0.styles.ad83f9a7.css" as="style"><link rel="preload" href="/TIL/assets/js/app.5733fdad.js" as="script"><link rel="preload" href="/TIL/assets/js/2.292369a1.js" as="script"><link rel="preload" href="/TIL/assets/js/13.af037c2e.js" as="script"><link rel="prefetch" href="/TIL/assets/js/10.3afcdb47.js"><link rel="prefetch" href="/TIL/assets/js/11.5776031c.js"><link rel="prefetch" href="/TIL/assets/js/12.48546d10.js"><link rel="prefetch" href="/TIL/assets/js/14.859fca24.js"><link rel="prefetch" href="/TIL/assets/js/3.15fe8a8c.js"><link rel="prefetch" href="/TIL/assets/js/4.669d567f.js"><link rel="prefetch" href="/TIL/assets/js/5.ace4defa.js"><link rel="prefetch" href="/TIL/assets/js/6.fde6ec0a.js"><link rel="prefetch" href="/TIL/assets/js/7.ac8e79f2.js"><link rel="prefetch" href="/TIL/assets/js/8.83e2b5f2.js"><link rel="prefetch" href="/TIL/assets/js/9.9c1e780c.js">
+    <link rel="stylesheet" href="/TIL/assets/css/0.styles.ad83f9a7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/TIL/" class="home-link router-link-active"><img src="/TIL/logo.jpeg" alt="realgo's TIL" class="logo"> <span class="site-name can-hide">realgo's TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/TIL/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/realgoways/TIL" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/TIL/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/realgoways/TIL" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/TIL/about/" class="sidebar-link">Today I Learned</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Concept</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Hadoop</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JPA</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>VuePress</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/TIL/VuePress/auto-publish.html" aria-current="page" class="active sidebar-link">VuePress 손쉽게 배포하기 (자동 빌드 및 배포)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/TIL/VuePress/auto-publish.html#git-actions-활용" class="sidebar-link">Git Actions 활용</a></li><li class="sidebar-sub-header"><a href="/TIL/VuePress/auto-publish.html#기타-액션-수행-결과-확인" class="sidebar-link">기타: 액션 수행 결과 확인</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress-손쉽게-배포하기-자동-빌드-및-배포"><a href="#vuepress-손쉽게-배포하기-자동-빌드-및-배포" class="header-anchor">#</a> VuePress 손쉽게 배포하기 (자동 빌드 및 배포)</h1> <p>VuePress를 알게 된 후 git pages 를 만든다고 이래 저래 셋팅을 하다 보니<br>
+새로 페이지를 만들거나 수정한 후 최종 반영까지의 단계가 조금 번거롭다고 느낌.</p> <p>개발자는 게으른게 미덕이라고 하나,<br>
+본인은 쓸데없이 덜 게으른 타입이라 한 땀 한 땀 손으로 하고 직접 확인하는 걸 좋아함ㅋ</p> <p>그.러.나.</p> <p>편리한 방법이 있다면 활용해야지!<br>
+하는 생각이 들었다. (철 들었나)</p> <p><img src="https://user-images.githubusercontent.com/15275415/89363494-4fb38a80-d70b-11ea-87d9-c00769d65401.jpg" alt="image"></p> <p>개선하고 나면 더 편할텐데 바빠서 개선할 시간이 없다고 하는 유명한 짤.<br>
+찾다보니 레고 버전도 있다ㅋㅋ</p> <p><img src="https://user-images.githubusercontent.com/15275415/89363497-517d4e00-d70b-11ea-8199-2430fb62d91a.jpg" alt="image"></p> <h2 id="git-actions-활용"><a href="#git-actions-활용" class="header-anchor">#</a> Git Actions 활용</h2> <p><a href="https://github.com/marketplace/actions/vuepress-deploy" target="_blank" rel="noopener noreferrer">https://github.com/marketplace/actions/vuepress-deploy<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 참고</p> <h3 id="저장소-root-에-github-workflows-폴더-설치"><a href="#저장소-root-에-github-workflows-폴더-설치" class="header-anchor">#</a> 저장소 root 에 <code>.github/workflows</code> 폴더 설치</h3> <div class="custom-block warning"><p class="custom-block-title">폴더명</p> <p><code>workflow</code> 가 아니라 <code>workflows</code> 임을 주의.</p></div> <p>처음에 <code>s</code> 를 빼먹고 설치해서 액션이 제대로 실행되지 않았었다. 😅</p> <h3 id="위에서-설치한-폴더-하위에-yml-파일-생성"><a href="#위에서-설치한-폴더-하위에-yml-파일-생성" class="header-anchor">#</a> 위에서 설치한 폴더 하위에 yml 파일 생성</h3> <p>필자는 <code>main.yml</code> 로 생성하고 내용은 아래 걸로 추가해줬다.</p> <div class="language-sh extra-class"><div class="highlight-lines"><br><div class="highlighted"> </div><br><br><div class="highlighted"> </div><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br></div><pre class="language-sh"><code>name: Build and Deploy
+on: <span class="token punctuation">[</span>push<span class="token punctuation">]</span>
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@1.0.1
+      env:
+        ACCESS_TOKEN: <span class="token variable">${{ secrets.ACCESS_TOKEN }</span><span class="token punctuation">}</span>
+        TARGET_REPO: realgoways/TIL
+        TARGET_BRANCH: gh-pages
+        BUILD_SCRIPT: <span class="token function">yarn</span> <span class="token operator">&amp;&amp;</span> <span class="token function">yarn</span> build
+        BUILD_DIR: docs/.vuepress/dist/
+</code></pre></div><h3 id="access-token-발급-및-셋팅"><a href="#access-token-발급-및-셋팅" class="header-anchor">#</a> <code>ACCESS_TOKEN</code> 발급 및 셋팅</h3> <p>위 파일에 보면 <code>secrets.ACCESS_TOKEN</code> 을 사용하는데 GitHub 저장소에 셋팅을 해줘야한다.</p> <p><strong>1. 토큰 발급</strong><br>
+Settings &gt; Developer settings &gt; Personal access tokens 접속해서 <code>Generate new token</code> 을 한다.<br> <a href="https://github.com/settings/tokens" target="_blank" rel="noopener noreferrer">https://github.com/settings/tokens<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Note 영역을 적절하게 채우고 <code>repo</code> 부분에 체크를 한 후 <code>Generate Token</code> <img src="https://user-images.githubusercontent.com/15275415/89365726-32cd8600-d710-11ea-82e2-2346d3d211b2.png" alt="image"></p> <p><strong>2. <code>ACCESS_TOKEN</code> 셋팅</strong><br>
+발행된 토큰을 복사해서 저장소의 Settings &gt; Secrets 로 이동<br>
+(저장소의 <code>Settings</code> 쪽으로 들어가야 한다.)</p> <p><img src="https://user-images.githubusercontent.com/15275415/89366033-f0587900-d710-11ea-8608-e70f4026d51b.png" alt="image"></p> <p><code>New Secret</code> 해서 key - value 를 적어준다.</p> <p>key : <code>ACCESS_TOKEN</code><br>
+value : 위에서 복사한 토큰</p> <p>아래와 같은 형태로 되면 된다.</p> <p><img src="https://user-images.githubusercontent.com/15275415/89366235-75dc2900-d711-11ea-94a8-7ec08cef5577.png" alt="image"></p> <p><strong>3. 이제 yml 파일을 push 하면 끝!</strong></p> <p>아래처럼 <code>Actions</code> 탭에서 실행 내역을 볼 수 있다.<br>
+(초반에 토큰 설정 시 repo 권한을 안 주고 셋팅해서 무수한 실패를..ㅋㅋ)</p> <p><img src="https://user-images.githubusercontent.com/15275415/89366418-d4090c00-d711-11ea-9ad5-72d88bd0a2bd.png" alt="image"></p> <h2 id="기타-액션-수행-결과-확인"><a href="#기타-액션-수행-결과-확인" class="header-anchor">#</a> 기타: 액션 수행 결과 확인</h2> <p>어느 시점에 오류가 발생했는지 확인할 수 있다.
+해당 부분을 클릭해보면 자세한 log 도 확인 가능하다.</p> <p><img src="https://user-images.githubusercontent.com/15275415/89366643-37933980-d712-11ea-99df-3ce5fa180c2b.png" alt="image"></p> <p>이로써 저장소에 push 만 하면 gh-pages 까지 자동 배포가 된다~ 🎉<br>
+이제 동그란 바퀴를 달게 되었다! ㅎㅎ</p> <p><img src="https://user-images.githubusercontent.com/15275415/89366851-a1134800-d712-11ea-9efe-01bd0ef8837f.png" alt="image"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/TIL/JPA/about_hibernate.html" class="prev">
+        Hibernate 란?
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/TIL/assets/js/app.5733fdad.js" defer></script><script src="/TIL/assets/js/2.292369a1.js" defer></script><script src="/TIL/assets/js/13.af037c2e.js" defer></script>
+  </body>
+</html>
